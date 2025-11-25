@@ -1,0 +1,38 @@
+.signin {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  padding: 0px 1rem 1rem 1rem;
+  max-width: 400px;
+  border: 1px solid black;
+}
+
+.signin h1 {
+  font-size: 2rem;
+}
+
+.signin p {
+  color: grey;
+}
+
+.signin form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+
+.signin form input {
+  font-size: 1rem;
+}
+
+.signin form button {
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.signin form a {
+  align-self: center;
+}
