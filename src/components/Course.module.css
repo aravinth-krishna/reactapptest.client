@@ -1,0 +1,89 @@
+.course {
+  display: flex;
+  gap: 20px;
+}
+
+.sidebar {
+  width: 250px;
+  background: #f9fafb;
+  border-right: 1px solid #eee;
+  padding: 1rem;
+}
+
+.sidebarTitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.filterSection {
+  margin-bottom: 20px;
+}
+
+.filterSection h4 {
+  margin-bottom: 8px;
+}
+
+.filterSection label {
+  display: block;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+
+.mainContent {
+  flex: 1;
+}
+
+.searchBox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  margin: 10px 0 20px;
+  border: 1px solid #ddd;
+  background: white;
+}
+
+.searchBox input {
+  border: none;
+  outline: none;
+  flex: 1;
+}
+
+.courseGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.courseCard {
+  background: white;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  transition: transform 0.15s ease;
+}
+
+.courseCard:hover {
+  transform: translateY(-3px);
+}
+
+.courseCard img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.cardBody {
+  padding: 15px;
+}
+
+.cardBody h3 {
+  margin-bottom: 8px;
+}
+
+.hours {
+  font-size: 14px;
+  color: #555;
+}
