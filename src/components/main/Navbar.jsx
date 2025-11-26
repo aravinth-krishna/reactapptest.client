@@ -1,27 +1,30 @@
 import styles from "./Navbar.module.css";
 import { CgProfile } from "react-icons/cg";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
     <nav className={styles.navbar}>
       <div className={styles.logo}>Learnit</div>
+
       <ul className={styles.navLinks}>
         <li>
-          <a href="/course">Courses</a>
+          <Link to="/app/course">Courses</Link>
         </li>
         <li>
-          <a href="/schedule">Schedule</a>
+          <Link to="/app/schedule">Schedule</Link>
         </li>
         <li>
-          <a href="/progress">Progress</a>
+          <Link to="/app/progress">Progress</Link>
         </li>
         <li>
-          <a href="/profile">Profile</a>
+          <Link to="/app/profile">Profile</Link>
         </li>
       </ul>
-      <div className={styles.profileIcon}>
-        <CgProfile />
-      </div>
+
+      <button className={styles.profileButton}>
+        <CgProfile size={26} />
+      </button>
     </nav>
   );
 }
