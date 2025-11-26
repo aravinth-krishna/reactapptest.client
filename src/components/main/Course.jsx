@@ -1,12 +1,15 @@
 import styles from "./Course.module.css";
 import { FaFilter, FaSearch } from "react-icons/fa";
 import { useState } from "react";
+import { IoIosAdd } from "react-icons/io";
+import { IoIosClose } from "react-icons/io";
 
 function Course() {
   const [search, setSearch] = useState("");
 
   return (
     <div className={styles.course}>
+      {/* Sidebar Filters */}
       <aside className={styles.sidebar}>
         <h2 className={styles.sidebarTitle}>
           <FaFilter /> Filters
@@ -23,15 +26,29 @@ function Course() {
         />
       </aside>
 
+      {/* Main Content */}
       <div className={styles.mainContent}>
-        <h1>Your Courses</h1>
+        <div className={styles.headerRow}>
+          <h1>Your Courses</h1>
 
-        <button popovertarget="add-course-pop" className={styles.addBtn}>
-          Add New Course
-        </button>
+          <button popovertarget="add-course-pop" className={styles.addBtn}>
+            <IoIosAdd size={26} /> Add Course
+          </button>
+        </div>
 
+        {/* Popover Form */}
         <div id="add-course-pop" popover="manual" className={styles.popover}>
-          <h3>Add New Course</h3>
+          <div className={styles.popoverHeader}>
+            <button
+              popovertarget="add-course-pop"
+              popovertargetaction="hide"
+              className={styles.closeBtn}
+            >
+              <IoIosClose size={26} />
+            </button>
+
+            <h3>Add New Course</h3>
+          </div>
 
           <form>
             <label>
@@ -54,45 +71,35 @@ function Course() {
               <input type="number" placeholder="e.g. 5" />
             </label>
 
-            {/* ⭐ NEW: Priority Dropdown */}
             <label>
               Priority
               <select>
                 <option value="">Select priority</option>
-                <option value="low">Low</option>
-                <option value="medium">Medium</option>
-                <option value="high">High</option>
+                <option>Low</option>
+                <option>Medium</option>
+                <option>High</option>
               </select>
             </label>
 
-            {/* ⭐ NEW: Difficulty Dropdown */}
             <label>
               Difficulty
               <select>
                 <option value="">Select difficulty</option>
-                <option value="beginner">Beginner</option>
-                <option value="intermediate">Intermediate</option>
-                <option value="advanced">Advanced</option>
+                <option>Beginner</option>
+                <option>Intermediate</option>
+                <option>Advanced</option>
               </select>
             </label>
 
             <button type="submit" className={styles.submitBtn}>
-              Save
+              Save Course
             </button>
           </form>
-
-          <button
-            popovertarget="add-course-pop"
-            popovertargetaction="hide"
-            className={styles.closeBtn}
-          >
-            ✖
-          </button>
         </div>
 
-        {/* Search */}
+        {/* Search Box */}
         <div className={styles.searchBox}>
-          <FaSearch />
+          <FaSearch className={styles.searchIcon} />
           <input
             type="text"
             placeholder="Search courses..."
@@ -101,7 +108,7 @@ function Course() {
           />
         </div>
 
-        {/* Courses */}
+        {/* Course Grid */}
         <div className={styles.courseGrid}>
           <CourseCard
             title="React Basics"

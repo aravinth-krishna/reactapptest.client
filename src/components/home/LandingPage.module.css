@@ -118,6 +118,8 @@ section {
 
 .featureItem img {
   width: 100%;
+  height: 200px;
+  object-fit: cover;
   border-bottom: 1px solid #e0e0e0;
 }
 
@@ -184,6 +186,8 @@ section {
 
 .teamItem img {
   width: 100%;
+  height: 225px;
+  object-fit: cover;
   border-bottom: 1px solid #ddd;
 }
 
