@@ -123,6 +123,14 @@
   margin-top: 4px;
 }
 
+.selectRow {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
 .submitBtn {
   padding: 12px;
   background: #2563eb;
@@ -132,9 +140,6 @@
 }
 
 .closeBtn {
-  position: absolute;
-  top: 8px;
-  right: 10px;
   background: transparent;
   border: none;
   font-size: 18px;

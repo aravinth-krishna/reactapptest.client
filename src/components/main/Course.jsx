@@ -39,6 +39,7 @@ function Course() {
         {/* Popover Form */}
         <div id="add-course-pop" popover="manual" className={styles.popover}>
           <div className={styles.popoverHeader}>
+            <h3>Add New Course</h3>
             <button
               popovertarget="add-course-pop"
               popovertargetaction="hide"
@@ -46,8 +47,6 @@ function Course() {
             >
               <IoIosClose size={26} />
             </button>
-
-            <h3>Add New Course</h3>
           </div>
 
           <form>
@@ -71,25 +70,27 @@ function Course() {
               <input type="number" placeholder="e.g. 5" />
             </label>
 
-            <label>
-              Priority
-              <select>
-                <option value="">Select priority</option>
-                <option>Low</option>
-                <option>Medium</option>
-                <option>High</option>
-              </select>
-            </label>
+            <div className={styles.selectRow}>
+              <label>
+                Priority
+                <select>
+                  <option value="">Select priority</option>
+                  <option>Low</option>
+                  <option>Medium</option>
+                  <option>High</option>
+                </select>
+              </label>
 
-            <label>
-              Difficulty
-              <select>
-                <option value="">Select difficulty</option>
-                <option>Beginner</option>
-                <option>Intermediate</option>
-                <option>Advanced</option>
-              </select>
-            </label>
+              <label>
+                Difficulty
+                <select>
+                  <option value="">Select difficulty</option>
+                  <option>Beginner</option>
+                  <option>Intermediate</option>
+                  <option>Advanced</option>
+                </select>
+              </label>
+            </div>
 
             <button type="submit" className={styles.submitBtn}>
               Save Course
