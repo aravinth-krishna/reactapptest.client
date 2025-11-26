@@ -1,0 +1,217 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  height: 90vh;
+  background-color: #f5f5f5;
+  padding: 0 20px;
+}
+
+.heroText {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.heroText h1 {
+  font-size: 3rem;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.heroText p {
+  font-size: 1.2rem;
+  margin: 10px 0 2rem 0;
+}
+
+.heroButton {
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.heroImage img {
+  aspect-ratio: 1 / 1;
+  width: 500px;
+  height: 400px;
+}
+
+.buttons {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.getStartedButton {
+  padding: 16px 16px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(30, 175, 83);
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+.getStartedButton:hover {
+  background-color: rgb(29, 153, 74);
+  color: #ffffff;
+}
+
+.learnMoreButton {
+  padding: 16px 16px;
+  border: none;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease;
+}
+
+.learnMoreButton:hover {
+  background-color: #e0e0e0;
+  color: #000000;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.features h2 {
+  font-size: 2rem;
+}
+
+.features p {
+  font-size: 1rem;
+  color: #666666;
+  max-width: 600px;
+  text-align: center;
+}
+
+.featureList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.featureItem {
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  width: 300px;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.featureItem img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.featureItem h3 {
+  margin: 0.5rem 0;
+}
+
+.featureItem p {
+  padding: 0 1rem 1rem 1rem;
+  font-size: 0.9rem;
+  color: #555555;
+}
+
+.featureItem:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.team h2 {
+  font-size: 2rem;
+}
+
+.team p {
+  font-size: 1rem;
+  color: #666666;
+  max-width: 600px;
+  text-align: center;
+}
+
+.teamList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.teamItem {
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  width: 300px;
+  padding-bottom: 1rem;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.teamItem img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.teamItem h3 {
+  margin: 0.5rem 0;
+}
+.teamItem h4 {
+  margin: 0.5rem 0;
+  color: #888888;
+}
+.teamItem:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+.getStarted {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ededed;
+  padding: 2rem;
+  height: 50vh;
+}
+
+.getStarted h2 {
+  font-size: 2rem;
+}
+
+.getStarted p {
+  font-size: 1rem;
+  color: #666666;
+  max-width: 600px;
+  text-align: center;
+}
+
+.getStarted button {
+  padding: 16px 16px;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(30, 175, 83);
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+.getStarted button:hover {
+  background-color: rgb(29, 153, 74);
+  color: #ffffff;
+}
