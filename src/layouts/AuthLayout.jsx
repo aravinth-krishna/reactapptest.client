@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import HomeFooter from "../components/HomeFooter.jsx";
+import HomeFooter from "../components/home/HomeFooter.jsx";
 
 const AuthLayout = () => {
   return (

@@ -15,13 +15,16 @@ import HomeLayout from "./layouts/HomeLayout.jsx";
 import AuthLayout from "./layouts/AuthLayout.jsx";
 
 const router = createBrowserRouter([
+  // Public Home Pages
   {
     path: "/",
     element: <HomeLayout />,
     children: [{ index: true, element: <LandingPage /> }],
   },
+
+  // Auth Pages (login / register)
   {
-    path: "/",
+    path: "/auth",
     element: <AuthLayout />,
     children: [
       { path: "login", element: <Signin /> },
@@ -29,9 +32,9 @@ const router = createBrowserRouter([
     ],
   },
 
-  // Protected
+  // Protected Main App Pages
   {
-    path: "/",
+    path: "/app",
     element: <Layout />,
     children: [
       { path: "course", element: <Course /> },
