@@ -1,8 +1,24 @@
 import styles from "./Navbar.module.css";
 import { CgProfile } from "react-icons/cg";
 import { Link } from "react-router-dom";
+import { useState, useRef, useEffect } from "react";
+import { IoIosLogOut } from "react-icons/io";
 
 function Navbar() {
+  const [open, setOpen] = useState(false);
+  const menuRef = useRef();
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    function handleClick(e) {
+      if (menuRef.current && !menuRef.current.contains(e.target)) {
+        setOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClick);
+    return () => document.removeEventListener("mousedown", handleClick);
+  }, []);
+
   return (
     <nav className={styles.navbar}>
       <div className={styles.logo}>
@@ -24,9 +40,20 @@ function Navbar() {
         </li>
       </ul>
 
-      <button className={styles.profileButton}>
-        <CgProfile size={26} />
-      </button>
+      <div className={styles.profileWrapper} ref={menuRef}>
+        <button className={styles.profileButton} onClick={() => setOpen(!open)}>
+          <CgProfile size={26} />
+        </button>
+
+        {open && (
+          <div className={styles.dropdown}>
+            <Link to="/app/profile">Profile</Link>
+            <button className={styles.logoutButton}>
+              <IoIosLogOut size={18} /> Logout
+            </button>
+          </div>
+        )}
+      </div>
     </nav>
   );
 }

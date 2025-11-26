@@ -115,21 +115,21 @@ function Course() {
             title="React Basics"
             description="Learn the fundamentals of React."
             hoursRemaining={12}
-            imageSrc="/src/assets/course1.png"
+            imageSrc="/src/assets/default-course.png"
           />
 
           <CourseCard
             title="Advanced JavaScript"
             description="Deep dive into JavaScript concepts."
             hoursRemaining={8}
-            imageSrc="/src/assets/course2.png"
+            imageSrc="/src/assets/default-course.png"
           />
 
           <CourseCard
             title="Web Development"
             description="Full-stack web development course."
             hoursRemaining={15}
-            imageSrc="/src/assets/course3.png"
+            imageSrc="/src/assets/default-course.png"
           />
         </div>
       </div>
