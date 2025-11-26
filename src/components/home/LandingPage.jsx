@@ -26,18 +26,21 @@ function Hero() {
           <br /> Plan Smarter.
         </h1>
         <p>
-          Transform your learning goals into a smart personalized weekly <br />{" "}
-          plan - automatically generated from your availability.
+          The AI-Powered Personalized Study Planner automatically organizes your
+          learning goals into a structured, efficient, and personalized weekly
+          schedule.
         </p>
         <div className={styles.buttons}>
           <Link to="/auth/register" className={styles.getStartedButton}>
             Get Started
           </Link>
-          <button className={styles.learnMoreButton}>Learn more</button>
+          <a href="#features" className={styles.learnMoreButton}>
+            Learn More
+          </a>
         </div>
       </div>
       <div className={styles.heroImage}>
-        <img src="src\assets\hero-image.png" alt="Hero Image" />
+        <img src="src/assets/hero-image.png" alt="Hero Illustration" />
       </div>
     </section>
   );
@@ -48,9 +51,8 @@ function Features() {
     <section id="features" className={styles.features}>
       <h2>Product Features</h2>
       <p>
-        Smart scheduling, structured modules, and real-time progress
-        tracking—all working together to keep your learning consistent and
-        effortless.
+        Smart scheduling, structured modules, and real-time progress tracking—
+        all working together to keep your learning consistent and effortless.
       </p>
       <div className={styles.featureList}>
         <div className={styles.featureItem}>
@@ -83,40 +85,54 @@ function Team() {
       <p>Meet our talented team of developers</p>
       <div className={styles.teamList}>
         <div className={styles.teamItem}>
-          <img src="src/assets/hero-image.png" alt="Personalized Plans" />
+          <img src="src/assets/hero-image.png" alt="Aravinth Krishna R" />
           <h3>Aravinth Krishna R</h3>
           <h4>Full Stack Developer</h4>
-          <Socials />
+          <Socials
+            github="https://github.com/yourusername"
+            linkedin="https://www.linkedin.com/in/aravinthkrishna/"
+            website="https://yourwebsite.com"
+          />
         </div>
         <div className={styles.teamItem}>
-          <img src="src/assets/hero-image.png" alt="Progress Tracking" />
+          <img src="src/assets/hero-image.png" alt="Selvavignesh G R" />
           <h3>Selvavignesh G R</h3>
           <h4>Full Stack Developer</h4>
-          <Socials />
+          <Socials
+            github="https://github.com/selvavignesh"
+            linkedin="https://www.linkedin.com/in/selvavignesh/"
+            website="https://yourwebsite.com"
+          />
         </div>
         <div className={styles.teamItem}>
-          <img src="src/assets/hero-image.png" alt="Resource Library" />
+          <img src="src/assets/hero-image.png" alt="Karolina A" />
           <h3>Karolina A</h3>
           <h4>Full Stack Developer</h4>
-          <Socials />
+          <Socials github="#" linkedin="#" website="#" />
         </div>
         <div className={styles.teamItem}>
-          <img src="src/assets/hero-image.png" alt="Resource Library" />
+          <img src="src/assets/hero-image.png" alt="Loga Priya S" />
           <h3>Loga Priya S</h3>
           <h4>Full Stack Developer</h4>
-          <Socials />
+          <Socials github="#" linkedin="#" website="#" />
         </div>
       </div>
     </section>
   );
 }
 
-function Socials() {
+function Socials({ github, linkedin, website }) {
   return (
     <div className={styles.socials}>
-      <FaGithub />
-      <FaLinkedin />
-      <FaGlobe />
+      <a href={github} target="_blank" rel="noopener noreferrer">
+        <FaGithub />
+      </a>
+      <a href={linkedin} target="_blank" rel="noopener noreferrer">
+        <FaLinkedin />
+      </a>
+      <a href={website} target="_blank" rel="noopener noreferrer">
+        <FaGlobe />
+      </a>
     </div>
   );
 }
@@ -129,7 +145,9 @@ function GetStarted() {
         Ready to build your learning habit? <br />
         Let's turn your goals into a clear, achievable plan.
       </p>
-      <button>Get Started</button>
+      <Link to="/auth/register" className={styles.getStartedButton}>
+        Get Started
+      </Link>
     </section>
   );
 }

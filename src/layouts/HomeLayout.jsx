@@ -5,9 +5,7 @@ import HomeFooter from "../components/home/HomeFooter";
 const HomeLayout = () => {
   return (
     <>
-      <header>
-        <HomeNavbar />
-      </header>
+      <HomeNavbar />
 
       <main>
         <Outlet />
