@@ -1,217 +1,253 @@
+/* -------- GLOBAL SECTION SPACING -------- */
+section {
+  padding: 80px 40px;
+  width: 100%;
+}
+
+/* -------- HERO SECTION -------- */
 .hero {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 40px;
-  height: 90vh;
-  background-color: #f5f5f5;
-  padding: 0 20px;
+  justify-content: space-between;
+  gap: 60px;
+  min-height: 90vh;
+  background: linear-gradient(180deg, #fafafa, #f2f2f2);
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .heroText {
   width: 50%;
-  display: flex;
-  flex-direction: column;
 }
 
 .heroText h1 {
-  font-size: 3rem;
-  margin: 0;
-  margin-bottom: 0.5rem;
+  font-size: 3.2rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 12px;
+  color: #111;
 }
 
 .heroText p {
-  font-size: 1.2rem;
-  margin: 10px 0 2rem 0;
-}
-
-.heroButton {
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s ease;
-}
-
-.heroImage img {
-  aspect-ratio: 1 / 1;
-  width: 500px;
-  height: 400px;
+  font-size: 1.15rem;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 2rem;
 }
 
 .buttons {
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .getStartedButton {
-  padding: 16px 16px;
-  border: none;
+  padding: 14px 26px;
+  border: 2px solid rgb(30, 175, 83);
   cursor: pointer;
   background-color: rgb(30, 175, 83);
-  color: #ffffff;
-  transition: background-color 0.3s ease;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
 }
 
 .getStartedButton:hover {
-  background-color: rgb(29, 153, 74);
-  color: #ffffff;
+  background-color: transparent;
+  color: rgb(30, 175, 83);
 }
 
 .learnMoreButton {
-  padding: 16px 16px;
-  border: none;
+  padding: 14px 26px;
+  border: 2px solid #222;
   cursor: pointer;
-  background-color: #f0f0f0;
-  transition: background-color 0.3s ease;
+  background-color: transparent;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #222;
 }
 
 .learnMoreButton:hover {
-  background-color: #e0e0e0;
-  color: #000000;
+  background-color: #222;
+  color: #fff;
 }
 
+.heroImage img {
+  width: 100%;
+  max-width: 850px;
+  height: auto;
+  border: 1px solid #ddd;
+}
+
+/* -------- FEATURES SECTION -------- */
 .features {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+  text-align: center;
+  background-color: #fff;
 }
 
 .features h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+  color: #111;
 }
 
 .features p {
-  font-size: 1rem;
-  color: #666666;
-  max-width: 600px;
-  text-align: center;
+  color: #555;
+  max-width: 650px;
+  margin: 0 auto 2.5rem auto;
+  line-height: 1.6;
 }
 
 .featureList {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1.5rem;
   justify-content: center;
 }
 
 .featureItem {
-  background-color: #f9f9f9;
-  border: 1px solid #e0e0e0;
-  width: 300px;
-  text-align: center;
-  transition: box-shadow 0.3s ease;
+  background-color: #fafafa;
+  border: 1px solid #e3e3e3;
+  width: 280px;
+  padding-bottom: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .featureItem img {
   width: 100%;
-  margin-bottom: 1rem;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .featureItem h3 {
-  margin: 0.5rem 0;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #222;
 }
 
 .featureItem p {
-  padding: 0 1rem 1rem 1rem;
-  font-size: 0.9rem;
-  color: #555555;
+  padding: 0 1rem;
+  font-size: 0.95rem;
+  color: #666;
 }
 
 .featureItem:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.09);
 }
 
+/* -------- TEAM SECTION -------- */
 .team {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
+  background-color: #f8f8f8;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
 }
 
 .team h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
 }
 
 .team p {
-  font-size: 1rem;
-  color: #666666;
+  width: 100%;
+  color: #666;
   max-width: 600px;
+  margin-bottom: 2.5rem;
   text-align: center;
 }
 
 .teamList {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1.5rem;
   justify-content: center;
 }
 
 .teamItem {
-  background-color: #f9f9f9;
-  border: 1px solid #e0e0e0;
-  width: 300px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  width: 260px;
   padding-bottom: 1rem;
-  text-align: center;
-  transition: box-shadow 0.3s ease;
+  transition: transform 0.2s ease;
 }
 
 .teamItem img {
   width: 100%;
-  margin-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
 }
 
 .teamItem h3 {
-  margin: 0.5rem 0;
+  margin-top: 1rem;
+  font-size: 1.15rem;
+  color: #222;
 }
+
 .teamItem h4 {
-  margin: 0.5rem 0;
-  color: #888888;
+  margin-top: 4px;
+  font-size: 0.9rem;
+  color: #777;
+  font-weight: 400;
 }
+
 .teamItem:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-6px);
 }
 
 .socials {
   display: flex;
   gap: 1rem;
   justify-content: center;
-  margin-top: 0.5rem;
+  margin-top: 0.8rem;
 }
+
+.socials svg {
+  width: 24px;
+  height: 24px;
+  color: #444;
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+
+.socials svg:hover {
+  color: #000;
+}
+
+/* -------- GET STARTED SECTION -------- */
 .getStarted {
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background-color: #ededed;
-  padding: 2rem;
-  height: 50vh;
+  background-color: #fff;
+  border-top: 1px solid #e0e0e0;
+  gap: 1.5rem;
 }
 
 .getStarted h2 {
   font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .getStarted p {
-  font-size: 1rem;
-  color: #666666;
+  color: #555;
   max-width: 600px;
   text-align: center;
+  line-height: 1.6;
+  margin-bottom: 2rem;
 }
 
 .getStarted button {
-  padding: 16px 16px;
-  border: none;
+  padding: 14px 26px;
+  border: 2px solid rgb(30, 175, 83);
+  background: rgb(30, 175, 83);
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.4px;
   cursor: pointer;
-  background-color: rgb(30, 175, 83);
-  color: #ffffff;
-  transition: background-color 0.3s ease;
+  text-transform: uppercase;
 }
 
 .getStarted button:hover {
-  background-color: rgb(29, 153, 74);
-  color: #ffffff;
+  background: transparent;
+  color: rgb(30, 175, 83);
 }

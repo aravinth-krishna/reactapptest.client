@@ -2,6 +2,7 @@ import styles from "./LandingPage.module.css";
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGlobe } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function LandingPage() {
   return (
@@ -29,7 +30,9 @@ function Hero() {
           plan - automatically generated from your availability.
         </p>
         <div className={styles.buttons}>
-          <button className={styles.getStartedButton}>Get Started</button>
+          <Link to="/auth/register" className={styles.getStartedButton}>
+            Get Started
+          </Link>
           <button className={styles.learnMoreButton}>Learn more</button>
         </div>
       </div>
@@ -42,7 +45,7 @@ function Hero() {
 
 function Features() {
   return (
-    <section className={styles.features}>
+    <section id="features" className={styles.features}>
       <h2>Product Features</h2>
       <p>
         Smart scheduling, structured modules, and real-time progress
@@ -51,17 +54,20 @@ function Features() {
       </p>
       <div className={styles.featureList}>
         <div className={styles.featureItem}>
-          <img src="src/assets/hero-image.png" alt="Personalized Plans" />
+          <img
+            src="src/assets/personalized-learning.jpg"
+            alt="Personalized Plans"
+          />
           <h3>Personalized Plans</h3>
           <p>Create study plans tailored to your schedule and goals.</p>
         </div>
         <div className={styles.featureItem}>
-          <img src="src/assets/hero-image.png" alt="Progress Tracking" />
+          <img src="src/assets/progress-tracking.jpg" alt="Progress Tracking" />
           <h3>Progress Tracking</h3>
           <p>Monitor your learning progress with detailed analytics.</p>
         </div>
         <div className={styles.featureItem}>
-          <img src="src/assets/hero-image.png" alt="Resource Library" />
+          <img src="src/assets/resource-library.jpg" alt="Resource Library" />
           <h3>Resource Library</h3>
           <p>Access a vast library of learning materials and resources.</p>
         </div>
@@ -72,7 +78,7 @@ function Features() {
 
 function Team() {
   return (
-    <section className={styles.team}>
+    <section id="about-us" className={styles.team}>
       <h2>Our Team</h2>
       <p>Meet our talented team of developers</p>
       <div className={styles.teamList}>
@@ -117,7 +123,7 @@ function Socials() {
 
 function GetStarted() {
   return (
-    <section className={styles.getStarted}>
+    <section id="contact" className={styles.getStarted}>
       <h2>Get Started!</h2>
       <p>
         Ready to build your learning habit? <br />
