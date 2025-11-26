@@ -5,7 +5,9 @@ import { Link } from "react-router-dom";
 function HomeNavbar() {
   return (
     <nav className={styles.homeNavbar}>
-      <h1 className={styles.logo}>Learnit</h1>
+      <h1 className={styles.logo}>
+        <a href="/">Learnit</a>
+      </h1>
       <ul className={styles.center}>
         <li>
           <a href="#features">Features</a>

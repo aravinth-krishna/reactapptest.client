@@ -79,6 +79,10 @@ section {
 
 /* -------- FEATURES SECTION -------- */
 .features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
   text-align: center;
   background-color: #fff;
 }
@@ -106,7 +110,7 @@ section {
 .featureItem {
   background-color: #fafafa;
   border: 1px solid #e3e3e3;
-  width: 280px;
+  width: clamp(250px, 30%, 300px);
   padding-bottom: 1rem;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -141,6 +145,7 @@ section {
   background-color: #f8f8f8;
   border-top: 1px solid #e0e0e0;
   text-align: center;
+  gap: 1rem;
 }
 
 .team h2 {
@@ -159,7 +164,7 @@ section {
 .teamList {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 2rem;
   justify-content: center;
 }
 
@@ -169,6 +174,10 @@ section {
   width: 260px;
   padding-bottom: 1rem;
   transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 .teamItem img {
