@@ -61,17 +61,37 @@ function Features() {
             alt="Personalized Plans"
           />
           <h3>Personalized Plans</h3>
-          <p>Create study plans tailored to your schedule and goals.</p>
+          <p>
+            Your availability + your goals = a structured weekly plan optimized
+            for pacing, order, and balance.
+          </p>
+        </div>
+        <div className={styles.featureItem}>
+          <img
+            src="src/assets/structured-modules.jpg"
+            alt="AI-Generated Course Structure"
+          />
+          <h3>AI-Generated Course Structure</h3>
+          <p>
+            Enter your topics — the system creates complete modules, subtopics,
+            and estimates for how long each part will take.
+          </p>
         </div>
         <div className={styles.featureItem}>
           <img src="src/assets/progress-tracking.jpg" alt="Progress Tracking" />
           <h3>Progress Tracking</h3>
-          <p>Monitor your learning progress with detailed analytics.</p>
+          <p>
+            Track your completed sessions, understand your workload, and get
+            helpful AI-backed recommendations to stay consistent.
+          </p>
         </div>
         <div className={styles.featureItem}>
           <img src="src/assets/resource-library.jpg" alt="Resource Library" />
           <h3>Resource Library</h3>
-          <p>Access a vast library of learning materials and resources.</p>
+          <p>
+            Access a vast library of learning materials and resources with the
+            help of AI.
+          </p>
         </div>
       </div>
     </section>
@@ -81,8 +101,8 @@ function Features() {
 function Team() {
   return (
     <section id="about-us" className={styles.team}>
-      <h2>Our Team</h2>
-      <p>Meet our talented team of developers</p>
+      <h2>Meet the Team</h2>
+      <p>The developers behind the AI-Powered Personalized Study Planner.</p>
       <div className={styles.teamList}>
         <div className={styles.teamItem}>
           <img src="src/assets/hero-image.png" alt="Aravinth Krishna R" />
@@ -140,10 +160,10 @@ function Socials({ github, linkedin, website }) {
 function GetStarted() {
   return (
     <section id="contact" className={styles.getStarted}>
-      <h2>Get Started!</h2>
+      <h2>Start Your Personalized Learning Journey!</h2>
       <p>
-        Ready to build your learning habit? <br />
-        Let's turn your goals into a clear, achievable plan.
+        Turn your goals into a structured, achievable weekly plan — powered by
+        AI, tailored entirely for you.
       </p>
       <Link to="/auth/register" className={styles.getStartedButton}>
         Get Started
