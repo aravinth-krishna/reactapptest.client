@@ -1,0 +1,120 @@
+.container {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* -------- METRICS ROW -------- */
+.metricsRow {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  padding: 8px 0;
+}
+
+.metric span {
+  color: #555;
+}
+
+.metric strong {
+  font-size: 1.3rem;
+  margin-top: 2px;
+  font-weight: 700;
+  color: #111;
+}
+
+/* -------- PROGRESS BAR -------- */
+.section h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.progressBarOuter {
+  width: 100%;
+  height: 10px;
+  background: #dcdcdc;
+}
+
+.progressBarInner {
+  height: 100%;
+  background: #007bff;
+}
+
+.progressLabel {
+  margin-top: 6px;
+  font-size: 0.85rem;
+  color: #444;
+}
+
+/* -------- CHART ROW -------- */
+.chartsRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.chartBox {
+  padding: 0;
+}
+
+/* -------- HEATMAP -------- */
+.heatmap {
+  display: grid;
+  grid-template-columns: repeat(20, 12px);
+  gap: 4px;
+  margin-top: 10px;
+}
+
+.heatBox {
+  width: 12px;
+  height: 12px;
+}
+
+/* -------- COURSE GRID -------- */
+.courseGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.courseCard {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border-bottom: 2px solid #e5e5e5;
+  padding-bottom: 8px;
+}
+
+.courseName {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.courseProgressBarOuter {
+  width: 100%;
+  height: 6px;
+  background: #dcdcdc;
+}
+
+.courseProgressBarInner {
+  height: 100%;
+  background: #007bff;
+}
+
+.coursePercent {
+  font-size: 0.9rem;
+  color: #444;
+}
