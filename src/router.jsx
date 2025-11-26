@@ -1,14 +1,16 @@
 import { createBrowserRouter } from "react-router-dom";
 
 import LandingPage from "./components/home/LandingPage.jsx";
+
 import Signin from "./components/auth/Signin.jsx";
 import Signup from "./components/auth/Signup.jsx";
 
-import Layout from "./layouts/Layout.jsx";
 import Course from "./components/main/Course.jsx";
 import Schedule from "./components/main/Schedule.jsx";
 import Progress from "./components/main/Progress.jsx";
 import Profile from "./components/main/Profile.jsx";
+
+import Layout from "./layouts/Layout.jsx";
 import HomeLayout from "./layouts/HomeLayout.jsx";
 import AuthLayout from "./layouts/AuthLayout.jsx";
 
